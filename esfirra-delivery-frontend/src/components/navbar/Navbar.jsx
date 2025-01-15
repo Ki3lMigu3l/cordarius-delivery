@@ -10,7 +10,8 @@ const Navbar = () => {
 
   const roles = [
     'Cordarius',
-    'Esfihas'
+    'Esfihas',
+    'Delivery'
   ]
 
   useEffect(() => {
