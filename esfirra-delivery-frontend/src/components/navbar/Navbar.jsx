@@ -60,7 +60,7 @@ const Navbar = () => {
         <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}> 
           <li>Cardapio</li>
           <li>Serviços</li>
-          <li>Contato</li>
+          <li>Contatos</li>
         </ul>
     </div>
   )
