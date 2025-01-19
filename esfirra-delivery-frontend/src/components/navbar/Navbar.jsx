@@ -1,12 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import './Navbar.css'
 import logo from '../../assets/Logo-cordarius.png'
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
 
   const roles = [
     'Cordarius',
@@ -47,8 +54,10 @@ const Navbar = () => {
         <img className='navbar-logo' src={logo} alt="" />
         <h1 className='navbar-title'>{text}</h1>
       </div>
-        <ul className='navbar-menu'>
-          <li>Home</li>
+      <div className='hamburguer' onClick={toggleMenu}>
+        <i className='fas fa-bars'></i>
+      </div>
+        <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}> 
           <li>Cardapio</li>
           <li>Serviços</li>
           <li>Contato</li>

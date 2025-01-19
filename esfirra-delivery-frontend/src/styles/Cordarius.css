@@ -1,0 +1,88 @@
+.cordarius-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cordarius-banner {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cordarius-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.cordarius-btn {
+    --bg: #000000e1;
+    --hover-bg: #BB030E;
+    color: #fff;
+    font-family: 'inter';
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 1.5em 3em;
+    background: var(--bg);
+    transition: 0.3s;
+}
+
+.gap-btn {
+    margin-left: 6px;
+}
+
+.cordarius-btn:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.cordarius-btn button:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+    .cordarius-btn {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        padding: 1.2em 2.5em; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cordarius-btn {
+        margin-top: 3rem;
+        font-size: 1rem; 
+        padding: 1em 2em; 
+    }
+
+    .cordarius-btn-container {
+        flex-direction: column; 
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cordarius-btn {
+        margin-top: 2rem;
+        font-size: 1rem; 
+        padding: 0.8em 1.5em; 
+    }
+
+    .cordarius-banner {
+        width: 105%;
+        max-width: none; 
+    }
+}

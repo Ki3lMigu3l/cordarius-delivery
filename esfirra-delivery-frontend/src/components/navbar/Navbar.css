@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 250px;
+    margin: 30px 450px;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 5px;
+    gap: 1rem;
 }
 
 .navbar-logo {
@@ -17,7 +17,8 @@
 }
 
 .navbar-title {
-    font-size: 23px;
+    align-self: center;
+    font-size: 20px;
 }
 
 .navbar-menu {
@@ -25,8 +26,135 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 45px;
-    font-size: 16px;
+    gap: 52px;
+    font-size: 14px;
     margin-right: 50px;
-    cursor: pointer;s
+    cursor: pointer;
+    transition:  0.5s ease-in-out;
+}
+
+.navbar-menu li:hover {
+    transform: scale(1.1);
+    color: #B50002;
+}
+
+.hamburguer {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
+@media (max-width: 1280px) {
+    .hamburguer {
+        display: none;
+    }
+    .navbar {
+        margin: 20px 100px;
+    }
+
+    .navbar-left {
+        gap: 1rem;
+    }
+
+    .navbar-menu {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar {
+        margin: 30px 100px;
+    }
+
+    .navbar-left {
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    .navbar-logo {
+        left: 300px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hamburguer {
+        font-size: 17px;
+        cursor: pointer;
+        display: block;
+      }
+
+    .navbar {
+        flex-direction: row;
+        margin: 20px; 
+    }
+
+    .navbar-left {
+        gap: 8px;
+    }
+
+    .navbar-menu {
+        font-family: 'poppins';
+        font-weight: 600;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: #000000e3;
+        color: #FFF;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        line-height: 20px;
+        padding: 50px 0;
+        transform: translateX(-140%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .navbar-menu li:hover {
+        color: #B50002;
+    }
+
+    .navbar-menu.open {
+        font-size: 15px;
+        gap: 30px;
+        transform: translateX(0);
+    }
+
+    .navbar-logo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .navbar-left {
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
 }
