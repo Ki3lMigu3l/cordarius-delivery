@@ -14,7 +14,7 @@ const Cordarius = () => {
         <img className='cordarius-banner' src={banner} alt="" />
       </div>
       <div className='cordarius-btn-container'>
-        <button className='cordarius-btn'>Faça o seu pedido!
+        <button className='cordarius-btn' id='cardapio'>Faça o seu pedido!
           <i className="fa-solid fa-cart-shopping gap-btn"></i>
         </button>
       </div>

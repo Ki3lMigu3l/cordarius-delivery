@@ -48,6 +48,10 @@
     font-weight: 300;
 }
 
+a {
+    color: #F1E7E4;
+}
+
 .navbar-menu li:hover {
     transform: scale(1.1);
     color: #FFF;

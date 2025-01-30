@@ -58,7 +58,7 @@ const Navbar = () => {
         <i className='fas fa-bars'></i>
       </div>
         <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}> 
-          <li>Cardapio</li>
+          <li><a href="#cardapio">Cardapio</a></li>
           <li>Serviços</li>
           <li>Contatos</li>
         </ul>

@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background: #FFF;
