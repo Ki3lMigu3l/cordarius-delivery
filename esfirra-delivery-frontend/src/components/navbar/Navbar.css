@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     background: radial-gradient(240deg, #bf0407c2, #9c0101be, #690000);
-    color: #FFF;
+    color: #F1E7E4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 0.4rem;
 }
 
 .navbar-logo {
@@ -28,7 +28,9 @@
 .navbar-title {
     font-family: 'inter';
     align-self: center;
+    color: #D4B34D;
     font-size: 19px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .navbar-menu {
@@ -43,7 +45,7 @@
     transition:  0.5s ease-in-out;
     font-size: 15px;
     font-family: 'inter';
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .navbar-menu li:hover {
