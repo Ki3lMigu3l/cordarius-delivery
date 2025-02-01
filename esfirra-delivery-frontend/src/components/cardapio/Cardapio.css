@@ -1,64 +1,68 @@
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin: 5rem 3em;
-  }
-  
-  .menu-item {
-    padding: 10px;
-    border-radius: 1em;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .menu-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-    font-weight: 300;
-  }
-  
-  .menu-item p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #5E9176;
-  }
-  
-  .menu-item img {
-    width: 100%;
-    height: 400px;
-    max-height: 200px;
-    border-radius: 1em;
-    object-fit: cover;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
-  }
-  
-  .menu-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
+  margin: 4rem 20rem;
+}
 
-  @media (max-width: 1200px) {
-    .menu-container {
-      grid-template-columns: repeat(4, 1fr); 
-      padding: 3em 1em;
-    }
+.menu-item {
+  padding: 10px;
+  border-radius: 1em;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 300;
+}
+
+.menu-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5E9176;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 400px;
+  max-height: 200px;
+  border-radius: 1em;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1280px) {
+  .menu-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3em 1em;
+    margin: 1rem 4rem;
   }
-  
-  @media (max-width: 768px) {
-    .menu-container {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 3em 1em;
-    }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em 1em;
+    margin: 2rem 1.5rem;
   }
-  
-  @media (max-width: 480px) {
-    .menu-container {
-      grid-template-columns: 1fr;
-      padding: 3em 1em;
-    }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+    padding: 3em 1em;
+    margin: 1rem 3rem;
   }
-  
+}

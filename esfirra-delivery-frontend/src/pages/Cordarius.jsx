@@ -3,7 +3,6 @@ import '../styles/Cordarius.css'
 import Navbar from '../components/navbar/Navbar'
 import banner from '../assets/Banner-Cordarius-Desktop.png'
 import Cardapio from '../components/cardapio/Cardapio'
-import Rodape from '../components/rodape/Rodape'
 
 const Cordarius = () => {
     
@@ -11,14 +10,12 @@ const Cordarius = () => {
     <><><div>
       <Navbar />
       <div className='cordarius-container'>
-        <img className='cordarius-banner' src={banner} alt="" />
+        <img className='cordarius-banner' src={banner} alt="cordarius delivery banner" />
       </div>
-      <div className='cordarius-btn-container'>
-        <button className='cordarius-btn' id='cardapio'>Faça o seu pedido!
-          <i className="fa-solid fa-cart-shopping gap-btn"></i>
-        </button>
+      <div className='cordarius-title-cardapio'>
+        <h2>Cardápio</h2>
       </div>
-    </div><Cardapio /></><Rodape /></>
+    </div><Cardapio /></></>
   )
 }
 

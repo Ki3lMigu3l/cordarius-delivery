@@ -4,17 +4,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
-  background: #FFF;
-  color: #191919;
   font-family: 'inter';
+  background: #F1E7E4;
+  height: 100vh;
+  overflow-x: hidden;
 }
